@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".secondActivity"
+    android:background="@drawable/background_img"
+    android:id="@+id/firstpage"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageSwitcher
+            android:id="@+id/image_switcher"
+            android:layout_width="397dp"
+            android:layout_height="384dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="44dp">
+
+        </ImageSwitcher>
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"></RelativeLayout>
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="689dp"
+            android:text="Name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_switcher"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-3dp"
+            android:text="Tu_hai_kha"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+
+        <SeekBar
+            android:id="@+id/seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Song"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="7dp"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/currentTimeTextView"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seek"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="-23dp"
+            android:gravity="center"
+            android:text="00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalTimeTextView"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/seek"
+            android:layout_alignEnd="@+id/seek"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="2dp"
+            android:gravity="center"
+            android:text="00"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/play"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="113dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Rever"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/l_skip"
+            android:textSize="50dp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/play_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/play" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/r_skip"
+            android:textSize="50dp"
+            android:id="@+id/next"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/singout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/black"
+        android:text="Sign out"
+        android:textSize="10dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

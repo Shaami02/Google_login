@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Music Application</string>
+    <string-array name="songs">
+    <item></item>
+    </string-array>
+</resources>
